@@ -1,0 +1,25 @@
+# Standard files to ignore
+
+# Files created by R
+
+*.Rhistory
+.RData
+
+# Files created by RStudio
+
+*.Rproj.user
+*.Rproj
+
+# Files created by VS Code
+
+*.code-workspace
+.vscode/
+
+# Files created by macOS
+
+.DS_Store
+
+.gitkeep
+
+
+
