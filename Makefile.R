@@ -12,34 +12,20 @@
 if (!require("pacman")) install.packages("pacman")
 
 # Load global packages
-pacman::p_load(tidyverse, quarto, fs, sessioninfo)
+pacman::p_load(pacman, sessioninfo, readr)
 
 # RUN -------------------------------------------------------
 
-# Execute code files
-
-quarto_render("code/1_acquire_data.qmd")
-
-quarto_render("code/2_curate_dataset.qmd")
-
-quarto_render("code/3_transform_dataset.qmd")
-
-quarto_render("code/4_describe_dataset.qmd")
-
-quarto_render("code/5_analyze_dataset.qmd")
-
-# Execute report files
-
-quarto_render("output/reports/article.qmd")
+# Execute files
 
 # DOCUMENTATION ---------------------------------------------
 
 # Session info
 
-sessioninfo::session_info() |>
+session_info() |>
   write_lines("output/session_info.txt")
 
 # CLEAN UP --------------------------------------------------
 
+p_unload(all) # unload all packages
 rm(list = ls()) # clear global environment
-pacman::p_unload(all) # unload all packages
