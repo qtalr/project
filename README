@@ -1,1 +1,21 @@
-Project description...
+## Project description...
+
+
+## Instructions ... 
+
+
+---------
+
+**About this template**
+
+The main file that coordinates the execution of this reproducible project is `Makefile.R`. This file contains commands to set up global R packages and to execute the project files. You may choose to run R scripts, R Markdown, or Quarto files.
+
+The project files should be modular and self-contained. Each file should be able to run independently of the others. The `Makefile.R` file should be able to run each file in the project.
+
+The entire project can be executed by running the following command in the terminal:
+
+```bash
+R CMD Rscript Makefile.R
+```
+
+

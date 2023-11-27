@@ -12,11 +12,15 @@
 if (!require("pacman")) install.packages("pacman")
 
 # Load global packages
-pacman::p_load(pacman, sessioninfo, readr)
+pacman::p_load(pacman, quarto, sessioninfo, readr)
 
 # RUN -------------------------------------------------------
 
 # Execute files
+
+# source("process/01_acquire.R")
+# render("process/01_acquire.Rmd")
+# render("process/01_acquire.qmd")
 
 # DOCUMENTATION ---------------------------------------------
 
